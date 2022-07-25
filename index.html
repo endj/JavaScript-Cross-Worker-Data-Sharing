@@ -12,11 +12,17 @@
     </style>
     <title>Document</title>
 </head>
-
 <body>
+    <script defer>
+        if(document.URL.indexOf("github") !== -1) {
+            const el = document.createElement("base")
+            el.setAttribute("href", "https://endj.github.io/JavaScript-Cross-Worker-Data-Sharing/")
+            document.getElementsByTagName("body")[0].appendChild(el)
+        }
+    </script>
     <p>Comparing structured cloning vs move semantics for sharing data accross workers</p>
-    <a href="/arrays/arrayTest.html">Arrays</a>
-    <a href="/objects/objectTest.html">Objects</a>
+    <a href="arrays/arrayTest.html">Arrays</a>
+    <a href="objects/objectTest.html">Objects</a>
 </body>
 
 </html>
