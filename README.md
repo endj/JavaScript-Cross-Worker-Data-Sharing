@@ -2,6 +2,10 @@
 
 Testing several strategies for sharing objects and arrays between workers.
 
+### Hosted @
+
+https://endj.github.io/JavaScript-Cross-Worker-Data-Sharing/
+
 ### Arrays
 
 Avoiding copying of data through move semantics seems to work well. Possible to split up data and distribute it across several workers for larger improvement if the algorithm allows it.
